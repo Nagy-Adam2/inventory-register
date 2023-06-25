@@ -1,0 +1,204 @@
+body {
+  font-family:       "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetia, sans-serif;
+  background-image:  url("../assets/images/cellarage.jpg");
+  background-repeat: repeat;
+  background-color:  #cccccc;
+  background-size:   cover;
+}
+
+.frame {
+  margin: 0 20px 0 20px;
+}
+
+.menu {
+  display:          flex;
+  justify-content:  flex-start;
+  gap:              20px;
+  background-color: #666699;
+  margin-bottom:    4rem;
+}
+
+.menu-item {
+  color:           white;
+  text-decoration: none;
+  padding:         5px 25px;
+}
+
+.menu-item:hover {
+  background-color: #33334d;
+}
+
+.center {
+  display:         flex;
+  justify-content: center;
+}
+
+.message {
+  width:            20%;
+  height:           242px;
+  float:            right;
+  background-color: white;
+  padding:          0px;
+}
+
+#textarea_id {
+  width: 98%;
+}
+
+.white {
+  background-color: white;
+}
+
+p,h1,form,button {
+	border:  0;
+	margin:  0;
+	padding: 0;	
+}
+
+.error {
+  margin:           1px auto;
+  width:            400px;
+  color:            white;
+  padding:          1px 5px;
+  background-color: red;
+  border-bottom:    solid 1px #ba0000;
+}
+
+.header {
+  margin: 0 auto;
+  width:  400px;
+}
+
+.login {
+  margin:           0 auto;
+	width:            400px;
+	padding:          14px;
+  border:           solid 2px #b7ddf2;
+  background-color: #ebf4fb;
+}
+
+.red {
+  color: red;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.width {
+  width: 170px;
+}
+
+.button {  
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: green;
+}
+
+.login h1 {
+	font-size:     14px;
+	font-weight:   bold;
+	margin-bottom: 8px;	
+}
+
+.login p {
+	font-size:      11px;
+	color:          #666666;
+	margin-bottom:  20px;
+	border-bottom:  solid 1px #b7ddf2;
+	padding-bottom: 10px;	
+}
+
+.login label {
+	display:     block;
+	font-weight: bold;
+	text-align:  right;
+	width:       140px;
+	float:       left;	
+}
+
+.login .small {
+	color:       #666666;
+	display:     block;
+	font-size:   11px;
+	font-weight: normal;
+	text-align:  right;
+	width:       140px;	
+}
+
+.login input {
+	float:     left;
+	font-size: 12px;
+	padding:   4px 2px;
+	border:    solid 1 px #aacfe4;
+	width:     200px;
+	margin:    2px 0 20px 10px;	
+}
+
+input.regist {
+  float:  none;
+  width:  20px;
+  margin: 0;
+}
+
+.login button {
+	margin-left: 150px;
+	width:       125px;
+	height:      31px;
+	background: #666666;
+	text-align:  center;
+	line-height: 31px;
+	color:       #ffffff;
+	font-size:   11px;
+	font-weight: bold;
+	margin:      2px 0 20px 10px;
+	cursor:      pointer;
+}
+
+
+@media screen and (max-width: 992px) {
+  .menu {
+    flex-wrap: wrap;
+    gap:       10px;
+  }
+  
+  .menu-item {
+    padding: 5px 14px;
+  }
+
+  .message {
+    position: relative;
+    left:     25%;
+    top:      1rem;
+    width:    40%;
+    float:    none;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .frame {
+    margin: 0;
+  }
+
+  .menu {
+    display:          inline-block;
+    width:            100%;
+    background-color: #666684;
+  }
+  
+  .menu-item {
+    display:          block;
+    text-align:       center;
+    background-color: #666699;
+    margin-bottom:    2px;
+  }
+
+  .message {
+    position: relative;
+    left:     0;
+    width:    100%;
+  }
+}
